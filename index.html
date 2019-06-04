@@ -15,8 +15,23 @@
             <a class="page-header__logo">Anastasiya Oborina</a>
           </div>
         </div>
-        <nav class="main-nav main-nav--background main-nav--close main-nav--nojs">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="hidden-menu-wrapper">
+          <input type="checkbox" id="hmt" class="hidden-menu-ticker">
+          <label class="btn-menu" for="hmt">
+            <span class="first"></span>
+            <span class="second"></span>
+            <span class="third"></span>
+          </label>
+          <ul class="hidden-menu">
+            <li class="site-list__item">
+              <a href="#works">Мои работы</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <nav class="main-nav main-nav--background">
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
