@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Анастасия Оборина</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__wrapper-header">
+        <div class="page-header__wrapper">
+          <div class="page-header__container">
+            <a class="page-header__logo">Anastasiya Oborina</a>
+          </div>
+        </div>
+        <nav class="main-nav main-nav--background main-nav--close main-nav--nojs">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a href="#works">Мои работы</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="page-header__description-wrapper">
+        <p class="page-header__description">Профессиональная верстка сайтов</p>
+        <a class="page-header__description-button" href="#made-up">Заказать верстку</a>
+      </div>
+
+    </header>
+
+    <main class="page-main">
+      <a name="works"></a>
+      <section class="works">
+        <div class="works__container">
+          <div class="works__container-header">
+            <h1 class="works__header">Portfolio</h1>
+            <ul class="works__description">
+              <li class="works__description-item works__description-item--color">
+                <img src="img/icon-tick.svg" height="15" width="21" alt="tick">
+                HTML5 + CSS3</li>
+              <li class="works__description-item">
+                <img src="img/icon-tick.svg" height="15" width="21" alt="tick">
+                Адаптивная верстка с использованием препроцессора Sass</li>
+              <li class="works__description-item">
+                <img src="img/icon-tick.svg" height="15" width="21" alt="tick">
+                БЭМ</li>
+              <li class="works__description-item works__description-item--color">
+                <img src="img/icon-tick.svg" height="15" width="21" alt="tick">
+                Gulp</li>
+              <li class="works__description-item">
+                <img src="img/icon-tick.svg" height="15" width="21" alt="tick">
+                Кроссбраузерность</li>
+            </ul>
+          </div>
+          <h2 class="visually-hidden">Работы</h2>
+          <ul class="works__list">
+            <li class="works__item works__item--first">
+              <div class="works__wrapper">
+                <a class="works__image" href="https://oborina.github.io/cat">
+                  <img class="works__image-background" src="img/cat energy.png" width="500" height="300" alt="work">
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper-container">
+        <div class="page-footer__container">
+          <a name="contacts"></a>
+          <a class="page-footer__logo">Anastasiya Oborina</a>
+          <div class="page-footer__wrapper">
+            <ul class="social-list">
+              <li class="social-list__item">
+                <a class="social-list__item--skype" href="#">Skype: kluchik.nastasia</a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__item--mail" href="#">E-mail: yasnastya2010@gmail.com</a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__item--mail" href="#">+7 (916) 753-94-35</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+          <form class="form" action="" method="get">
+            <div class="form__wrapper">
+              <a name="made-up"></a>
+                <ul class="form__list">
+                  <li class="form__item">
+                    <label class="form__value" for="name">Имя: *</label>
+                    <input class="form__window" type="text" name="name" id="name" placeholder="Jon Snow">
+                  </li>
+
+                  <li class="form__item">
+                    <label class="form__value form__value--color" for="email">E-mail: *</label>
+                    <input class="form__window" type="email" name="email" id="email" placeholder="example@gmail.com">
+                  </li>
+
+                  <li class="form__item">
+                    <label class="form__value" for="tel">Телефон:</label>
+                    <input class="form__window" type="tel" name="tel" id="tel" placeholder="+7 (960) 960-60-90">
+                  </li>
+
+                  <li class="form__item">
+                  <label>
+                    <textarea class="form__window form__window--comment" name="comment" placeholder="Комментарий"></textarea>
+                  </label>
+                  </li>
+
+                  <li class="form__item">
+                    <input class="form__window form__window--file" type="file" name="file" id="file">
+                  </li>
+                </ul>
+            </div>
+            <div class="form__button-container">
+                <button class="form__button" type="submit">Отправить</button>
+            </div>
+          </form>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/picturefill.js"></script>
+  </body>
+</html>
