@@ -131,33 +131,29 @@
           </div>
         </div>
 
-          <form class="form" action="" method="get">
+          <form class="form" id="form-contact" action="" method="POST">
             <div class="form__wrapper">
               <a name="made-up"></a>
                 <ul class="form__list">
                   <li class="form__item">
                     <label class="form__value" for="name">Имя: *</label>
-                    <input class="form__window" type="text" name="name" id="name" placeholder="Jon Snow">
+                    <input class="form__window" type="text" name="from_name" id="name" placeholder="Jon Snow">
                   </li>
 
                   <li class="form__item">
                     <label class="form__value form__value--color" for="email">E-mail: *</label>
-                    <input class="form__window" type="email" name="email" id="email" placeholder="example@gmail.com">
+                    <input class="form__window" type="email" name="email_html" id="email" placeholder="example@gmail.com">
                   </li>
 
                   <li class="form__item">
                     <label class="form__value" for="tel">Телефон:</label>
-                    <input class="form__window" type="tel" name="tel" id="tel" placeholder="+7 (960) 960-60-90">
+                    <input class="form__window" type="tel" name="tel_html" id="tel" placeholder="+7 (960) 960-60-90">
                   </li>
 
                   <li class="form__item">
                   <label>
-                    <textarea class="form__window form__window--comment" name="comment" placeholder="Комментарий"></textarea>
+                    <textarea class="form__window form__window--comment" name="comment_html" placeholder="Комментарий"></textarea>
                   </label>
-                  </li>
-
-                  <li class="form__item">
-                    <input class="form__window form__window--file" type="file" name="file" id="file">
                   </li>
                 </ul>
             </div>
@@ -168,6 +164,13 @@
       </div>
     </footer>
 
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+    <script type="text/javascript">
+      (function(){
+        emailjs.init("user_Wolp3cLhFJxUvPJ87h28s");
+      })();
+    </script>
     <script src="js/script.js"></script>
     <script src="js/picturefill.js"></script>
   </body>

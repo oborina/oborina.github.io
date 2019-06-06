@@ -1,17 +1,25 @@
-var navMain = document.querySelector('.main-nav');
-var navToggle = document.querySelector('.main-nav__toggle');
+var myform = $("form#form-contact");
+myform.submit(function(event){
+  event.preventDefault();
 
-var link = document.querySelector(".button-modal");
+  var params = myform.serializeArray().reduce(function(obj, item) {
+    obj[item.name] = item.value;
+    return obj;
+  }, {});
 
-navMain.classList.remove('main-nav--nojs');
+  var service_id = "default_service";
 
-navToggle.addEventListener('click', function() {
-  if (navMain.classList.contains('main-nav--close')) {
-    navMain.classList.remove('main-nav--close');
-    navMain.classList.add('main-nav--opened');
-  } else {
-    navMain.classList.add('main-nav--close');
-    navMain.classList.remove('main-nav--opened');
-  }
+  var template_id = "template_Up4cDo4h";
+  myform.find("button").text("Отправка...");
+  emailjs.send(service_id, template_id, params)
+    .then(function(){
+      alert("Спасибо! Письмо отправлено!");
+      myform.find("button").text("Отправлено");
+    }, function(err) {
+      alert("Не удалось отправить письмо!\r\n Ответ:\n " + JSON.stringify(err));
+      myform.find("button").text("Send");
+    });
+
+  return false;
 });
 
