@@ -184,10 +184,25 @@
 
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script type="text/javascript">
       (function(){
         emailjs.init("user_Wolp3cLhFJxUvPJ87h28s");
       })();
+    </script>
+    <script>
+      $(function() {
+        $(window).ready(function () {
+          $(".page-header__wrapper-header").addClass("page-header__fix");
+        });
+        $(window).on("scroll", function() {
+          if($(window).scrollTop() > 50) {
+            $(".page-header__wrapper-header").addClass("page-header__scroll");
+          } else {
+            $(".page-header__wrapper-header").removeClass("page-header__scroll");
+          }
+        });
+      });
     </script>
     <script src="js/script.js"></script>
     <script src="js/picturefill.js"></script>
