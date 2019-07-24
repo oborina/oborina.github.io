@@ -13,13 +13,16 @@
           <img src="img/logo-mini.png" alt="logo">
         </div>
         <div class="page-header__search">
+          <input class="page-header__search-button" type="button" name="button">
           <img src="img/search-icon.svg" width="45" height="45" alt="search">
         </div>
-        <div class="page-header__favorites">
-          <img src="img/heart-icon.svg" width="20" height="40" alt="favorites">
-        </div>
-        <div class="page-header__basket">
-          <img src="img/basket-icon.svg" width="20" height="40" alt="basket">
+        <div class="page-header__wrapper">
+          <div class="page-header__favorites">
+            <img src="img/heart-icon.svg" width="20" height="40" alt="favorites">
+          </div>
+          <div class="page-header__basket">
+            <img src="img/basket-icon.svg" width="20" height="40" alt="basket">
+          </div>
         </div>
         <div class="page-header__nav">
           <input type="checkbox" id="hmt" class="page-header__ticker">
@@ -71,7 +74,7 @@
             <div class="info-menu">
               <button type="button" class="info-menu__block info-menu__block--user">
                 <img class="info-menu__image" src="img/user-icon.svg" width="22" height="22" alt="user">
-                <p class="info-menu__text">Войти</p>
+                <p class="info-menu__text info-menu__text--user">Войти</p>
               </button>
               <div class="info-menu__block info-menu__block--city">
                 <img class="info-menu__image" src="img/location-icon.svg" width="10" height="10" alt="location">
@@ -79,10 +82,10 @@
               </div>
               <div class="info-menu__wrapper">
                 <div class="info-menu__block">
-                  <img class="info-menu__image" src="img/address-icon.svg" width="22" height="22" alt="address">
-                  <p class="info-menu__text">Адреса</p>
+                  <img class="info-menu__image info-menu__image--address" src="img/address-icon.svg" width="22" height="22" alt="address">
+                  <p class="info-menu__text info-menu__text--address">Адреса</p>
                 </div>
-                <div class="info-menu__block">
+                <div class="info-menu__block info-menu__block--help">
                   <img class="info-menu__image" src="img/info-icon.svg" width="20" height="20" alt="info">
                   <p class="info-menu__text">Помощь</p>
                 </div>
