@@ -14,8 +14,15 @@
         </div>
         <div class="page-header__wrapper">
           <div class="page-header__search">
-            <input class="page-header__search-button" type="button" name="button">
-            <img src="img/search-icon.svg" width="45" height="45" alt="search">
+            <a class="page-header__mobile">
+              <img src="img/search-icon.svg" width="45" height="45" alt="search">
+            </a>
+            <form method="get" action="search">
+              <input class="page-header__search-window" type="text" name="search">
+              <button class="page-header__button" type="submit">
+                <img src="img/search-icon.svg" width="45" height="45" alt="search">
+              </button>
+            </form>
           </div>
           <div class="page-header__user">
             <img src="img/user-icon.svg" width="24" height="40" alt="user">
@@ -75,22 +82,24 @@
               </ul>
             </div>
             <div class="info-menu">
-              <button type="button" class="info-menu__block info-menu__block--user">
-                <img class="info-menu__image" src="img/user-icon.svg" width="22" height="22" alt="user">
-                <p class="info-menu__text info-menu__text--user">Войти</p>
-              </button>
-              <div class="info-menu__block info-menu__block--city">
-                <img class="info-menu__image" src="img/location-icon.svg" width="10" height="10" alt="location">
-                <p class="info-menu__text info-menu__text--city">Петропавловск-Камчатский</p>
-              </div>
-              <div class="info-menu__wrapper">
-                <div class="info-menu__block">
-                  <img class="info-menu__image info-menu__image--address" src="img/address-icon.svg" width="22" height="22" alt="address">
-                  <p class="info-menu__text info-menu__text--address">Адреса</p>
+              <div class="info-menu__container">
+                <button type="button" class="info-menu__block info-menu__block--user">
+                  <img class="info-menu__image" src="img/user-icon.svg" width="22" height="22" alt="user">
+                  <p class="info-menu__text info-menu__text--user">Войти</p>
+                </button>
+                <div class="info-menu__block info-menu__block--city">
+                  <img class="info-menu__image" src="img/location-icon.svg" width="10" height="10" alt="location">
+                  <p class="info-menu__text info-menu__text--city">Петропавловск-Камчатский</p>
                 </div>
-                <div class="info-menu__block info-menu__block--help">
-                  <img class="info-menu__image" src="img/info-icon.svg" width="20" height="20" alt="info">
-                  <p class="info-menu__text">Помощь</p>
+                <div class="info-menu__wrapper">
+                  <div class="info-menu__block info-menu__block--address">
+                    <img class="info-menu__image info-menu__image--address" src="img/address-icon.svg" width="22" height="22" alt="address">
+                    <p class="info-menu__text info-menu__text--address">Адреса</p>
+                  </div>
+                  <div class="info-menu__block info-menu__block--help">
+                    <img class="info-menu__image" src="img/info-icon.svg" width="20" height="20" alt="info">
+                    <p class="info-menu__text">Помощь</p>
+                  </div>
                 </div>
               </div>
             </div>
