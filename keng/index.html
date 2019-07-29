@@ -18,20 +18,24 @@
               <img src="img/search-icon.svg" width="45" height="45" alt="search">
             </a>
             <form method="get" action="search">
-              <input class="page-header__search-window" type="text" name="search">
+              <input class="page-header__search-window" type="text" name="search" autocomplete="off">
               <button class="page-header__button" type="submit">
                 <img src="img/search-icon.svg" width="45" height="45" alt="search">
               </button>
             </form>
           </div>
           <div class="page-header__user">
-            <img src="img/user-icon.svg" width="24" height="40" alt="user">
+            <a href="#modal">
+              <img src="img/user-icon.svg" width="24" height="40" alt="user">
+            </a>
           </div>
           <div class="page-header__favorites">
             <img src="img/heart-icon.svg" width="20" height="40" alt="favorites">
+            <span>1</span>
           </div>
           <div class="page-header__basket">
             <img src="img/basket-icon.svg" width="20" height="40" alt="basket">
+            <span>1</span>
           </div>
         </div>
         <div class="page-header__nav">
@@ -104,6 +108,68 @@
               </div>
             </div>
           </nav>
+        </div>
+      </div>
+      <div class="modal-search" id="modal">
+        <div class="modal-search__container">
+          <div class="modal-search__main">
+            <div class="modal-search__wrapper">
+              <h2 class="modal-search__title">Возможно, вы искали:</h2>
+              <ul class="modal-search__list">
+                <li class="modal-search__item"><a href="#">Женская куртка</a></li>
+                <li class="modal-search__item"><a href="#">Детская куртка</a></li>
+                <li class="modal-search__item"><a href="#">Куртка на молнии</a></li>
+                <li class="modal-search__item"><a href="#">Длинная куртка</a></li>
+                <li class="modal-search__item"><a href="#">Мужская куртка</a></li>
+                <li class="modal-search__item"><a href="#">Кожаная куртка</a></li>
+              </ul>
+            </div>
+            <div class="modal-search__wrapper">
+              <h2 class="modal-search__title">Бренды:</h2>
+              <ul class="modal-search__list">
+                <li class="modal-search__item"><a href="#">Dior</a></li>
+                <li class="modal-search__item"><a href="#">Burberry</a></li>
+                <li class="modal-search__item"><a href="#">Dolce&Gabbana</a></li>
+              </ul>
+            </div>
+            <div class="modal-search__wrapper">
+              <h2 class="modal-search__title">Категории:</h2>
+              <ul class="modal-search__list">
+                <li class="modal-search__item"><a href="#">Девочки / Куртки</a></li>
+                <li class="modal-search__item"><a href="#">Мальчики / Куртки</a></li>
+                <li class="modal-search__item"><a href="#">Девочки / Школа</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-search__wrapper">
+            <h2 class="modal-search__title">Подходящие товары:</h2>
+            <ul class="modal-search__list modal-search__list--selection">
+              <li class="modal-search__item modal-search__item--selection">
+                <a href="#">
+                  <img src="img/foto.jpg" class="modal-search__image" alt="foto">
+                  <h3 class="modal-search__item-title">EMPORIO ARMANI</h3>
+                  <p class="modal-search__description">Куртка осенняя с карманами</p>
+                  <p class="modal-search__price">31490.-</p>
+                </a>
+              </li>
+              <li class="modal-search__item modal-search__item--selection">
+                <a href="#">
+                  <img src="img/foto.jpg" class="modal-search__image" alt="foto">
+                  <h3 class="modal-search__item-title">EMPORIO ARMANI</h3>
+                  <p class="modal-search__description">Пальто зимнее с карманами</p>
+                  <p class="modal-search__price">31490.-</p>
+                </a>
+              </li>
+              <li class="modal-search__item modal-search__item--selection">
+                <a href="#">
+                  <img src="img/foto.jpg" class="modal-search__image" alt="foto">
+                  <h3 class="modal-search__item-title">EMPORIO ARMANI</h3>
+                  <p class="modal-search__description">Куртка осенняя с карманами</p>
+                  <p class="modal-search__price">31490.-</p>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
