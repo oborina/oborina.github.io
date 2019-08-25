@@ -31,8 +31,8 @@
           </ul>
           <ul class="main-nav__list">
             <li class="main-nav__item"><a href="index.html">Добро пожаловать</a></li>
-            <li class="main-nav__item main-nav__item--active"><a>Направления и классы</a></li>
-            <li class="main-nav__item"><a href="trial.html">Пробное занятие</a></li>
+            <li class="main-nav__item"><a href="classes.html">Направления и классы</a></li>
+            <li class="main-nav__item main-nav__item--active"><a>Пробное занятие</a></li>
             <li class="main-nav__item"><a href="#">Преподаватели</a></li>
             <li class="main-nav__item"><a href="#">Абонементы</a></li>
             <li class="main-nav__item"><a href="#">Расписание</a></li>
@@ -51,21 +51,24 @@
   </header>
 
   <main class="page-main">
-    <section class="classes">
-      <div class="classes__container">
-        <div class="classes__header">
-          <h1 class="classes__title">Yoga —</h1>
-          <p class="classes__text">Для начинающих</p>
-          <div class="classes__arrow-back"></div>
-          <div class="classes__arrow-next"></div>
+    <section class="trial">
+      <div class="trial__container">
+        <h1 class="trial__header"><span>10%</span> скидка на абонемент</h1>
+        <p class="trial__description">Мы сделаем для вас 10% скидку
+          на абонемент, купленный в день посещения вводного занятия.</p>
+        <div class="form">
+          <form class="form__request" method="get" action="#">
+            <input class="form__block" type="text" name="name" placeholder="Ваше имя">
+            <input class="form__block" type="text" name="phone" placeholder="Ваш телефон">
+            <div class="form__wrapper">
+              <img src="img/mail-icon.svg" width="24" height="24" alt="mail">
+              <button class="form__button" type="submit">Отправить заявку</button>
+            </div>
+          </form>
         </div>
-        <div class="classes__description">
-          <p class="classes__block classes__block--first">Йога для начинающих рассчитана на тех, кто до этого никогда ей не занимался
-            и требует обучения. Такой программный комплекс существует и в нашем центре.</p>
-          <p class="classes__block classes__block--second">Мы предлагаем посетить бесплатное вводное занятие, чтобы узнать, почему так много людей занимаются йогой
-            и придерживаются здорового образа жизни.</p>
+        <div class="trial__information">Нажимая «Отправить заявку», вы даете
+          <a href="#">согласие</a> на обработку своих персональных данных
         </div>
-        <div class="classes__button"><a href="#">Записаться онлайн</a></div>
       </div>
     </section>
   </main>
@@ -73,7 +76,7 @@
   <footer class="page-footer">
     <div class="page-footer__container">
       <section class="page">
-        <div class="page__current">02</div>
+        <div class="page__current">03</div>
         <div class="page__all">- 09</div>
       </section>
       <section class="social">
@@ -86,4 +89,5 @@
   </footer>
   </body>
 </html>
+
 
