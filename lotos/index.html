@@ -21,6 +21,7 @@
           <span class="page-header__first"></span>
           <span class="page-header__second"></span>
           <span class="page-header__third"></span>
+          <div class="page-header__text">Меню</div>
         </label>
         <nav class="main-nav">
           <ul class="main-nav__wrapper">
@@ -42,23 +43,33 @@
           </ul>
         </nav>
       </div>
-      <div class="page-header__logo">
-        <img src="img/lotos-icon.png" width="40" height="25" alt="logo">
-      </div>
+      <picture class="page-header__logo">
+        <source type="image/webp" srcset="img/lotos-icon.webp, img/lotos-icon@2x.webp 2x, img/lotos-icon@3x.webp 3x">
+        <img src="img/lotos-icon.png" srcset="img/lotos-icon@2x.png 2x, img/lotos-icon@3x.png 3x" width="40" height="25" alt="logo">
+      </picture>
+      <div class="page-header__title">Добро пожаловать</div>
+      <div class="page-header__phone">+7 (812) 345-56-97</div>
     </div>
   </header>
 
   <main class="page-main">
     <section class="welcome">
-      <div class="welcome__image">
-        <img src="img/01-foto.png" alt="foto-1">
-      </div>
-      <div class="welcome__header">
-        <h1 class="welcome__title">Lotos</h1>
-        <div class="welcome__item">Центр йоги</div>
-      </div>
-      <div class="welcome__wrapper">
-        <p class="welcome__description">Приглашаем вас и ваших друзей на бесплатное пробное занятие</p>
+      <div class="welcome__container">
+        <picture class="welcome__image">
+          <source type="image/webp" media="(min-width:1220px)" srcset="img/01-des.webp, img/01-des@2x.webp 2x, img/01-des@3x.webp 3x">
+          <source type="image/webp" srcset="img/01-foto.webp 1x, img/01-foto.webp 2x, img/01-foto@3x.webp 3x">
+          <source media="(min-width:1220px)" srcset="img/01-des.png, img/01-des@2x.png 2x, img/01-des@3x.png 3x">
+          <img src="img/01-foto.png" srcset="img/01-foto@2x.png 2x, img/01-foto@3x.png 3x" alt="foto-1">
+        </picture>
+        <div class="welcome__block">
+          <div class="welcome__header">
+            <h1 class="welcome__title">Lotos</h1>
+            <div class="welcome__item">Центр йоги</div>
+          </div>
+          <div class="welcome__wrapper">
+            <p class="welcome__description">Приглашаем вас и ваших друзей на бесплатное пробное занятие</p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -74,7 +85,10 @@
         <div class="social__item social__item--facebook"><a href="#">fb</a></div>
         <div class="social__item social__item--twitter"><a href="#">inst</a></div>
       </section>
-      <div class="page-footer__arrow"></div>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__text">Направления и классы</div>
+        <div class="page-footer__arrow"></div>
+      </div>
     </div>
   </footer>
   </body>

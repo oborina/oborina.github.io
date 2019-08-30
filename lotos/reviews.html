@@ -42,10 +42,11 @@
           </ul>
         </nav>
       </div>
-      <a href="index.html">
-        <div class="page-header__logo">
-          <img src="img/lotos-icon.png" width="40" height="25" alt="logo">
-        </div>
+      <a class="page-header__logo-image" href="index.html">
+        <picture class="page-header__logo">
+          <source type="image/webp" srcset="img/lotos-icon.webp, img/lotos-icon@2x.webp 2x, img/lotos-icon@3x.webp 3x">
+          <img src="img/lotos-icon.png" srcset="img/lotos-icon@2x.png 2x, img/lotos-icon@3x.png 3x" width="40" height="25" alt="logo">
+        </picture>
       </a>
     </div>
   </header>
@@ -53,7 +54,10 @@
   <main class="page-main">
     <section class="reviews">
       <div class="reviews__container">
-        <img src="img/photo-otzyv.jpg" alt="reviews">
+        <picture class="reviews__image">
+          <source type="image/webp" srcset="img/photo-review.webp, img/photo-review@2x.webp 2x, img/photo-review@3x.webp 3x">
+          <img src="img/photo-review.jpg" srcset="img/photo-review@2x.jpg 2x, img/photo-review@3x.jpg 3x" alt="reviews">
+        </picture>
         <h1 class="reviews__header">Арина Наумова</h1>
         <div class="reviews__arrow-back"></div>
         <div class="reviews__arrow-next"></div>
