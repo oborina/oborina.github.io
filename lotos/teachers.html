@@ -21,6 +21,7 @@
           <span class="page-header__first"></span>
           <span class="page-header__second"></span>
           <span class="page-header__third"></span>
+          <div class="page-header__text">Меню</div>
         </label>
         <nav class="main-nav">
           <ul class="main-nav__wrapper">
@@ -48,32 +49,53 @@
           <img src="img/lotos-icon.png" srcset="img/lotos-icon@2x.png 2x, img/lotos-icon@3x.png 3x" width="40" height="25" alt="logo">
         </picture>
       </a>
+      <div class="page-header__title">Преподаватели</div>
+      <div class="page-header__phone">+7 (812) 345-56-97</div>
     </div>
   </header>
 
   <main class="page-main">
     <section class="teacher">
       <div class="teacher__container">
+        <div class="teacher__title-list">Trainer —</div>
+        <ul class="teacher__list">
+          <li class="teacher__item teacher__item--active">Максим Казаков</li>
+          <li class="teacher__item">Юлия Зырянова</li>
+          <li class="teacher__item">Настя Антипова</li>
+          <li class="teacher__item">Ольга Ветрова</li>
+          <li class="teacher__item">Катя Стреженова</li>
+          <li class="teacher__item">Мария Жукова</li>
+        </ul>
         <div class="teacher__wrapper">
           <picture class="teacher__image">
             <div class="teacher__arrow-back"></div>
-            <source type="image/webp" srcset="img/maksim-teacher.webp, img/maksim-teacher@2x.webp 2x, img/maksim-teacher@3x.webp 3x">
+            <source media="(min-width: 1300px)" type="image/webp" srcset="img/maksim-des.webp 1x, img/maksim-des@2x.webp 2x, img/maksim-des@3x.webp 3x">
+            <source type="image/webp" srcset="img/maksim-teacher.webp 1x, img/maksim-teacher@2x.webp 2x, img/maksim-teacher@3x.webp 3x">
+            <source media="(min-width: 1300px)" srcset="img/maksim-des.png 1x, img/maksim-des@2x.png 2x, img/maksim-des@3x.png 3x">
             <img src="img/maksim-teacher.png" srcset="img/maksim-teacher@2x.png 2x, img/maksim-teacher@3x.png 3x" alt="teacher">
             <div class="teacher__arrow-next"></div>
           </picture>
         </div>
-        <div class="teacher__header">
-          <h1 class="teacher__title">Максим Казаков</h1>
-          <p class="teacher__text">Преподаватель йоги с 1997 года</p>
-        </div>
-        <p class="teacher__description">
-          Занимается йогой Айенгара с 1990 года.
-          Является преподавателем йоги Айенгара с 1997 года.
-          Имеет международный сертификат Junior I.
-          Проводит семинары, занятия разных уровней сложностей.
-        </p>
-        <div class="teacher__button">
-          <a href="#">Записаться к тренеру</a>
+        <div class="teacher__block">
+          <div class="teacher__header">
+            <h1 class="teacher__title">Максим Казаков</h1>
+            <p class="teacher__text">Преподаватель йоги с 1997 года</p>
+          </div>
+          <p class="teacher__description">
+            Занимается йогой Айенгара с 1990 года.
+            Является преподавателем йоги Айенгара с 1997 года.
+            Имеет международный сертификат Junior I.
+            Проводит семинары, занятия разных уровней сложностей.
+          </p>
+          <p class="teacher__description teacher__description--desktop">
+            В йогу привел интерес.
+            Является одним из самых опытных преподавателей и опорой нашего центра.
+            Все студенты любят Максима за отзывчивость
+            и индивидуальный подход к каждому.
+          </p>
+          <div class="teacher__button">
+            <a href="#">Записаться к тренеру</a>
+          </div>
         </div>
       </div>
     </section>
@@ -90,7 +112,10 @@
         <div class="social__item social__item--facebook"><a href="#">fb</a></div>
         <div class="social__item social__item--twitter"><a href="#">inst</a></div>
       </section>
-      <div class="page-footer__arrow"></div>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__text">Абонементы</div>
+        <div class="page-footer__arrow"></div>
+      </div>
     </div>
   </footer>
   </body>
