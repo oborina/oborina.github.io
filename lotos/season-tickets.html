@@ -21,6 +21,7 @@
           <span class="page-header__first"></span>
           <span class="page-header__second"></span>
           <span class="page-header__third"></span>
+          <div class="page-header__text">Меню</div>
         </label>
         <nav class="main-nav">
           <ul class="main-nav__wrapper">
@@ -48,47 +49,55 @@
           <img src="img/lotos-icon.png" srcset="img/lotos-icon@2x.png 2x, img/lotos-icon@3x.png 3x" width="40" height="25" alt="logo">
         </picture>
       </a>
+      <div class="page-header__title">Абонементы</div>
+      <div class="page-header__phone">+7 (812) 345-56-97</div>
     </div>
   </header>
 
   <main class="page-main">
     <section class="tickets">
       <div class="tickets__container">
-        <table class="tickets__table">
-          <tr class="tickets__list">
-            <td class="tickets__item tickets__item--active">
-              <div class="tickets__title tickets__title--active">Разовое занятие</div>
-              <div class="tickets__price"><span>300</span> руб.</div>
-            </td>
-            <td class="tickets__item">
-              <div class="tickets__title">Месяц занятий</div>
-              <div class="tickets__price"><span>2 000</span> руб.</div>
-            </td>
-          </tr>
-          <tr class="tickets__list">
-            <td class="tickets__item">
-              <div class="tickets__title">2 месяца занятий</div>
-              <div class="tickets__price"><span>3 500</span> руб.</div>
-            </td>
-            <td class="tickets__item">
-              <div class="tickets__title">3 месяца занятий</div>
-              <div class="tickets__price"><span>4 500</span> руб.</div>
-            </td>
-          </tr>
-          <tr class="tickets__list">
-            <td class="tickets__item">
-              <div class="tickets__title">Пол года занятий</div>
-              <div class="tickets__price"><span>8 000</span> руб.</div>
-            </td>
-            <td class="tickets__item">
-              <div class="tickets__title">Год занятий</div>
-              <div class="tickets__price"><span>14 000</span> руб.</div>
-            </td>
-          </tr>
-        </table>
-      </div>
-      <div class="tickets__button">
-        <a href="#">Заказать абонемент</a>
+        <picture class="tickets__image">
+          <source type="image/webp" srcset="img/05-des.webp 1x, img/05-des@2x.webp 2x, img/05-des@3x.webp 3x">
+          <img src="img/05-des.png" srcset="img/05-des@2x.png 2x, img/05-des@3x.png 3x" alt="foto">
+        </picture>
+        <div class="tickets__wrapper">
+          <table class="tickets__table">
+            <tr class="tickets__list">
+              <td class="tickets__item tickets__item--active">
+                <div class="tickets__title tickets__title--active">Разовое занятие</div>
+                <div class="tickets__price"><span>300</span> руб.</div>
+              </td>
+              <td class="tickets__item">
+                <div class="tickets__title">Месяц занятий</div>
+                <div class="tickets__price"><span>2 000</span> руб.</div>
+              </td>
+            </tr>
+            <tr class="tickets__list">
+              <td class="tickets__item">
+                <div class="tickets__title">2 месяца занятий</div>
+                <div class="tickets__price"><span>3 500</span> руб.</div>
+              </td>
+              <td class="tickets__item">
+                <div class="tickets__title">3 месяца занятий</div>
+                <div class="tickets__price"><span>4 500</span> руб.</div>
+              </td>
+            </tr>
+            <tr class="tickets__list">
+              <td class="tickets__item">
+                <div class="tickets__title">Пол года занятий</div>
+                <div class="tickets__price"><span>8 000</span> руб.</div>
+              </td>
+              <td class="tickets__item">
+                <div class="tickets__title">Год занятий</div>
+                <div class="tickets__price"><span>14 000</span> руб.</div>
+              </td>
+            </tr>
+          </table>
+          <div class="tickets__button">
+            <a href="#">Заказать абонемент</a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -104,9 +113,11 @@
         <div class="social__item social__item--facebook"><a href="#">fb</a></div>
         <div class="social__item social__item--twitter"><a href="#">inst</a></div>
       </section>
-      <div class="page-footer__arrow"></div>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__text">Расписание</div>
+        <div class="page-footer__arrow"></div>
     </div>
-  </footer>
+  </div></footer>
   </body>
 </html>
 
