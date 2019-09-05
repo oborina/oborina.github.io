@@ -21,6 +21,7 @@
           <span class="page-header__first"></span>
           <span class="page-header__second"></span>
           <span class="page-header__third"></span>
+          <div class="page-header__text">Меню</div>
         </label>
         <nav class="main-nav">
           <ul class="main-nav__wrapper">
@@ -48,42 +49,49 @@
           <img src="img/lotos-icon.png" srcset="img/lotos-icon@2x.png 2x, img/lotos-icon@3x.png 3x" width="40" height="25" alt="logo">
         </picture>
       </a>
+      <div class="page-header__title">Контакты</div>
+      <div class="page-header__phone">+7 (812) 345-56-97</div>
     </div>
   </header>
 
   <main class="page-main">
     <section class="contacts">
       <div class="contacts__container">
-        <div class="contacts__image">
+        <picture class="contacts__image">
+          <source type="image/webp" media="(min-width:1220px)" srcset="img/map-desk.webp">
+          <source type="image/webp" srcset="img/map.webp">
+          <source media="(min-width:1220px)" srcset="img/map-desk.jpg">
           <img src="img/map.png" alt="map">
-        </div>
-        <ul class="contacts__list">
-          <li class="contacts__item">
-            <div class="contacts__title">Адрес:</div>
-            <div class="contacts__text contacts__text--bottom">СПб, Невский проспект 108</div>
-          </li>
-          <li class="contacts__item">
-            <div class="contacts__title">Email:</div>
-            <div class="contacts__text">Lotos-yoga@gmail.com</div>
-          </li>
-        </ul>
-        <ul class="contacts__link">
-          <li class="contacts__link-item contacts__link-item--bottom">
-            <div class="contacts__link-image">
-              <img src="img/map-location-icon.svg" width="30" height="27" alt="location">
-            </div>
-            <a href="#">Смотреть на карте</a>
-          </li>
-          <li class="contacts__link-item">
-            <div class="contacts__link-image contacts__link-image--top">
-              <img src="img/mail-icon.svg" width="30" height="18" alt="review">
-            </div>
-            <a href="#">Оставить отзыв</a>
-          </li>
-        </ul>
-        <div class="contacts__company">© 2018 — ООО “Центр йоги Лотос”</div>
-        <div class="contacts__button">
-          <a href="#">Записаться онлайн</a>
+        </picture>
+        <div class="contacts__wrapper">
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <div class="contacts__title">Адрес:</div>
+              <div class="contacts__text contacts__text--bottom">СПб, Невский проспект 108</div>
+            </li>
+            <li class="contacts__item">
+              <div class="contacts__title">Email:</div>
+              <div class="contacts__text">Lotos-yoga@gmail.com</div>
+            </li>
+          </ul>
+          <ul class="contacts__link">
+            <li class="contacts__link-item contacts__link-item--bottom">
+              <div class="contacts__link-image">
+                <img src="img/map-location-icon.svg" width="30" height="27" alt="location">
+              </div>
+              <a href="#">Смотреть на карте</a>
+            </li>
+            <li class="contacts__link-item">
+              <div class="contacts__link-image contacts__link-image--top">
+                <img src="img/mail-icon.svg" width="30" height="18" alt="review">
+              </div>
+              <a href="#">Оставить отзыв</a>
+            </li>
+          </ul>
+          <div class="contacts__company">© 2018 — ООО “Центр йоги Лотос”</div>
+          <div class="contacts__button">
+            <a href="#">Записаться онлайн</a>
+          </div>
         </div>
       </div>
     </section>
@@ -100,7 +108,10 @@
         <div class="social__item social__item--facebook"><a href="#">fb</a></div>
         <div class="social__item social__item--twitter"><a href="#">inst</a></div>
       </section>
-      <div class="page-footer__arrow page-footer__arrow--top"></div>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__text">Вернуться</div>
+        <div class="page-footer__arrow page-footer__arrow--top"></div>
+      </div>
     </div>
   </footer>
   </body>
